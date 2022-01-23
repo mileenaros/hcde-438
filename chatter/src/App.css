@@ -1,6 +1,81 @@
 .App {
-  background: #ffe7bd;
+  background-image: linear-gradient(to right, #faaa83, #ff8486);
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background: #f5f4f2
+}
+
+.logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  background: url(https://kr.theepochtimes.com/assets/uploads/2021/02/6331661e12fa5ad97b73fe3897eef0d6-395x400.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 50%;
+}
+
+.title {
+  color: #faaa83;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.byline {
+  color: #faaa83;
+  font-weight: bold;
+  font-size: 0.5rem;
+  margin-top: 0.7rem;
+  margin-left: 0.5rem;
+}
+
+.footer {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0rem;
+  background: #f5f4f2;
+  position: relative;
+}
+
+.text-input {
+  width: 100%;
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+  margin: 0 0.5rem;
+}
+
+.send {
+  background: #faaa83;
+  border-radius: 50%;
+  border: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  right: 0.8rem;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition-duration: 0.1s;
+  transition-timing-function: ease;
+}
+
+.send:active {
+  background: white;
+  color: #faaa83;
+  transition-duration: 0.1s;
+  transition-timing-function: ease;
 }
