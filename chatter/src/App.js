@@ -9,6 +9,11 @@ function App() {
         <span className="title">chit chat</span>
         <span className="byline">by Mileena Ros</span>
       </header>
+      <div className="messages">
+        <div className="message">hi</div>
+        <div className="message">wassssssup</div>
+        <div className="message">hello this is a message</div>
+      </div>
       <footer className="footer">
         <input className="text-input"></input>
         <button className="send">↑</button>
