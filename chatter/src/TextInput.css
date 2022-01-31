@@ -1,0 +1,32 @@
+.footer {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0rem;
+    background: #f5f4f2;
+    position: relative;
+  }
+  
+  .text-input {
+    width: 95%;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 0 2%;
+    padding: 0 0.5%;
+    position: absolute;
+  }
+  
+  .send {
+    background: #faaa83;
+    border-radius: 50%;
+    border: none;
+    height: 1.75rem;
+    width: 1.75rem;
+    position: absolute;
+    right: 2.5%;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+  }

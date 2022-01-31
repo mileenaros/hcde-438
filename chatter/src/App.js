@@ -1,7 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import TextInput from "./TextInput.js";
+import Message from "./Message.js";
+import { useState } from "react";
 
 function App() {
+  const [messages, setMessage] = useState([]);
+  function sendMessage(text) {
+    const newMessage = {
+      text,
+      time: Date.now(),
+      // user: "Mileena",
+    };
+  }
+  console.log(messages);
+
   return (
     <div className="App">
       <header className="header">
@@ -14,10 +26,7 @@ function App() {
         <div className="message">wassssssup</div>
         <div className="message">hello this is a message</div>
       </div>
-      <footer className="footer">
-        <input className="text-input"></input>
-        <button className="send">↑</button>
-      </footer>
+      <TextInput sendMessage={sendMessage} />
     </div>
   );
 }
