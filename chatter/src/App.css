@@ -1,5 +1,5 @@
 .App {
-  background-image: linear-gradient(to right, #faaa83, #ff8486);
+  background-color: #faaa83;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,13 +29,5 @@
   color: #faaa83;
   font-weight: bold;
   font-size: 1.5rem;
-  margin-left: 0.5rem;
-}
-
-.byline {
-  color: #faaa83;
-  font-weight: bold;
-  font-size: 0.5rem;
-  margin-top: 0.7rem;
   margin-left: 0.5rem;
 }
