@@ -24,10 +24,11 @@ function App() {
         <div className="logo"></div>
         <span className="title">chit chat</span>
       </header>
-      <div className="messages sent">
+      <div className="messages">
         {messages.map((msg, i) => {
           return <Message {...msg} key={i} />;
         })}
+        <div className="message received">this should be on the left</div>
       </div>
       <TextInput sendMessage={sendMessage} />
     </div>

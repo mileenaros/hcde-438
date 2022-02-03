@@ -1,8 +1,8 @@
-.messages{
+.messages {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
-    overflow: auto;
+    overflow: scroll;
     max-height: calc(100vh - 4rem - 6rem);
     min-height: calc(100vh - 4rem - 6rem);
     padding: 1rem;
@@ -12,11 +12,13 @@
     color: black;
     background: #f5f4f2;
     padding: 0.5rem 1rem;
-    margin: 0.2rem;
+    margin: 0.4rem 0.2rem;
     min-height: 1.25rem;
     max-width: 10rem;
     border-radius: 1.25rem;
     position: relative;
+    z-index: 6;
+    overflow-wrap: break-word;
   }
 
   /* Referenced from https://stackoverflow.com/questions/19400183/how-to-style-chat-bubble-in-iphone-classic-style-using-css-only */
@@ -44,3 +46,24 @@
     border-bottom-left-radius: 10px;
   }
 
+.received {
+  align-self: flex-start;
+}
+
+.received::before {
+  left: -8px;
+  right: 0;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 0;
+}
+
+.received::after {
+  left: -10px;
+  right: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0;
+}
+
+/* fix/change/add:
+scrolling
+message tail on last message only */
