@@ -1,4 +1,4 @@
-.messages {
+.messages{
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
@@ -8,7 +8,7 @@
     padding: 1rem;
   }
   
-  .message {
+  .message{
     color: black;
     background: #f5f4f2;
     padding: 0.5rem 1rem;
@@ -43,3 +43,4 @@
     background: #faaa83;
     border-bottom-left-radius: 10px;
   }
+

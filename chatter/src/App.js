@@ -24,7 +24,7 @@ function App() {
         <div className="logo"></div>
         <span className="title">chit chat</span>
       </header>
-      <div className="messages">
+      <div className="messages sent">
         {messages.map((msg, i) => {
           return <Message {...msg} key={i} />;
         })}
