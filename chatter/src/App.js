@@ -1,10 +1,17 @@
-import './App.css';
-import TextInput from "./TextInput.js";
-import Message from "./Message.js";
-import { useState } from "react";
+import './App.css'
+import TextInput from "./TextInput.js"
+import Message from "./Message.js"
+import Camera from 'react-snap-pic'
+import { useState } from "react"
 
 function App() {
   let [messages, setMessages] = useState([]);
+  const [showCamera, setShowCamera] = useState(false)
+
+  function takePicture(img) {
+    console.log(img);
+    setShowCamera(false);
+  }
 
   function sendMessage(text) {
     if (!text) return;
@@ -28,9 +35,14 @@ function App() {
         {messages.map((msg, i) => {
           return <Message {...msg} key={i} />;
         })}
+        {/* FOR TESTING */}
         <div className="message received">this should be on the left</div>
       </div>
-      <TextInput sendMessage={sendMessage} />
+      <TextInput 
+        sendMessage={sendMessage}
+        showCamera={()=>setShowCamera(true)}
+      />
+      {showCamera && <Camera takePicture={takePicture}/>}
     </div>
   );
 }

@@ -8,25 +8,29 @@
     position: relative;
   }
   
-  .text-input {
-    width: 100%;
-    height: 2rem;
-    border-radius: 1rem;
-    border: none;
-    margin: 0 2%;
-    padding-left: 0.5rem;
-    padding-right: 0;
-  }
+.camera {
+  margin-left: 2.5%;
+}
+
+.text-input {
+  width: calc(100% - 50px);
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+  margin: 0 2%;
+  padding-left: 0.5rem;
+  padding-right: 0;
+}
   
-  .send {
-    background: #faaa83;
-    border-radius: 50%;
-    border: none;
-    height: 1.75rem;
-    width: 1.75rem;
-    position: absolute;
-    right: 2.5%;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-  }
+.send {
+  background: #faaa83;
+  border-radius: 50%;
+  border: none;
+  height: 1.75rem;
+  width: 1.75rem;
+  position: absolute;
+  right: 2.5%;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
