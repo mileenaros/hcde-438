@@ -1,0 +1,33 @@
+.username {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 2rem;
+    margin: 0;
+}
+
+.name-input {
+    width: 50%;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+}
+
+.name {
+    color: #faaa83;
+    font-weight: bold;
+}
+
+.edit, .update {
+    background: transparent;
+    border: none;
+    color: #faaa83;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
